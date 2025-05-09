@@ -13,3 +13,4 @@
 !.vscode/*.json
 !*.jpeg
 !*.ipynb
+!*.rar
