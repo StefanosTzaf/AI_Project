@@ -169,7 +169,11 @@ def load_model_and_dataset(args):
     random.seed(seed)
     if device == 'cuda':
         torch.cuda.manual_seed_all(seed)
-    
+    os.makedirs('data/test/test_image', exist_ok=True)
+    os.makedirs('data/test/test_annotation', exist_ok=True)
+
+
+
     voc = PerImageAnnotationDataset(image_dir=dataset_config['im_test_path'], annotation_dir=dataset_config['ann_test_path'])
     test_dataset = DataLoader(voc, batch_size=1, shuffle=False)
     
