@@ -14,3 +14,4 @@
 !*.jpeg
 !*.ipynb
 !*.rar
+images_for_user_testing/!*.jpeg
